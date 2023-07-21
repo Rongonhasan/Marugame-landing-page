@@ -1,0 +1,262 @@
+/* Made By Thoriq AS  */
+
+/* Original Website Marugame Udon : https://www.marugameudon.co.id/  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header Style Start */
+.header {
+  height: 72px;
+}
+.navlist {
+  background-color: #495057;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navlist a {
+  font-weight: 700;
+  font-size: 25px;
+  float: left;
+  color: #fca311;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 7px 9px;
+}
+
+.navlist a:hover {
+  color: #333;
+  background-color: #fca311;
+}
+
+.navlist-right {
+  float: right;
+  margin: 0px 20px;
+}
+
+.navlist-left {
+  margin-left: 20px;
+}
+
+/* Header Style End */
+
+/* Jumbotron Style Start */
+.jumbotron {
+  background: url(img/jumbatron.png);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  color: #000;
+  -webkit-text-stroke: 1px #fff;
+}
+.center h1 {
+  font-size: 4.5em;
+}
+
+.jumbo-desk {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* Jumbotron Style End */
+
+/* About Style Start */
+.title-about {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.box {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+/* About Style End */
+
+/* Card Style Start */
+.title-card {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 2rem;
+  gap: 1rem;
+  margin-top: 60px;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 15.8rem;
+  overflow: hidden;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+.card:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to left, #ffd194, #d1913c);
+}
+
+.card_header img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card_body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+  font-size: 14px;
+}
+.tag-brown:hover {
+  background: linear-gradient(to bottom, #333, #000);
+}
+
+.card_body h4 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.card_body h4 a:hover {
+  color: #fff;
+}
+
+/* Card Style End */
+
+@media (max-width: 768px) {
+  .jumbotron {
+    margin-top: 70px;
+  }
+  .navlist-right {
+    float: none;
+    margin: 0;
+  }
+  .navlist a {
+    float: none;
+    display: list-item;
+    font-size: 16px;
+    padding: 2px;
+  }
+  .container {
+    grid-template-columns: 230px 230px;
+  }
+  .menu {
+    margin-top: 300px;
+  }
+  .title-card {
+    margin-top: 290px;
+  }
+}
+@media (max-width: 486px) {
+  .center h1 {
+    font-size: 3rem;
+  }
+  .container {
+    grid-template-columns: 220px;
+    width: auto;
+  }
+  .menu {
+    margin-top: 800px;
+  }
+  .jumbo-desk {
+    font-size: 16px;
+  }
+  .title-card {
+    margin-top: 800px;
+    font-size: 28px;
+  }
+  .title-about {
+    font-size: 28px;
+  }
+}
+@media (max-width: 260px) {
+  .center h1 {
+    font-size: 22px;
+  }
+  .jumbo-desk {
+    font-size: 14px;
+  }
+  .container {
+    grid-template-columns: 140px;
+  }
+  .title-about {
+    font-size: 22px;
+  }
+  .title-card {
+    margin-top: 600px;
+    font-size: 22px;
+  }
+  .box {
+    font-size: 10px;
+  }
+  .card {
+    width: 10em;
+  }
+  .card_body {
+    font-size: 10px;
+  }
+  .card_body h4 a {
+    font-size: 13px;
+  }
+
+  .tag-brown {
+    font-size: 9px;
+  }
+}
